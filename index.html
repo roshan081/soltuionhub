@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Page - SolutionHub</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header {
+            background-color: rgb(3, 3, 3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .tagline-left, .tagline-right {
+            font-style: italic;
+            font-size: 16px;
+            color: white;
+            position: absolute;
+        }
+        .tagline-left {
+            left: 20px;
+        }
+        .tagline-right {
+            right: 20px;
+        }
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .logo .solution {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+        }
+        .logo .hub {
+            background-color: orange;
+            color: black;
+            padding: 5px 10px;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        .navbar {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            flex: 1;
+            border-right: 2px solid white;
+            border-top: 2px solid white;
+            border-block: 2px solid white;
+        }
+        .navbar a:last-child {
+            border-right: none;
+        }
+        .navbar a:hover {
+            background-color: orange;
+            color: black;
+        }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Animated Ad Section 
+    .ad-section {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+    .ad-images {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+    .ad-images img {
+      width: 100%;
+      height: 200px;
+    }
+*/
+    /* Filters and Sorting */
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .filters select, .filters input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .filters input {
+      width: 200px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .product-card p {
+      margin: 5px 0;
+    }
+    
+
+/* topsection */
+
+
+
+
+
+.header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .tagline-left, .tagline-right {
+            font-style: italic;
+            font-size: 16px;
+            color: white;
+            position: absolute;
+        }
+        .tagline-left {
+            left: 20px;
+        }
+        .tagline-right {
+            right: 20px;
+        }
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .logo .solution {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+        }
+        .logo .hub {
+            background-color: orange;
+            color: black;
+            padding: 5px 10px;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        .navbar {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            flex: 1;
+            border-right: 2px solid white;
+            border-top: 2px solid white;
+            border-block: 2px solid white;
+        }
+        .navbar a:last-child {
+            border-right: none;
+        }
+        .navbar a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+/* Ad section */
+.container2 {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            height: 300px;
+        }
+
+        /* Ad section styles */
+        .ad-section {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: #f7d44c;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            height: 150px;
+        }
+        .ad-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .ad-slide {
+            min-width: 100%;
+            height: 150px;
+            color: #fff;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .ad-slide-1 { background-image: url('ad1.jpg'); }
+        .ad-slide-2 { background-image: url('ad2.jpg'); }
+        .ad-slide-3 { background-image: url('ad4.jpg'); }
+
+  </style>
+</head>
+<body>
+  
+  <div class="header">
+    <span class="tagline-left">"Innovative Solutions"</span>
+    <div class="logo">
+        <span class="solution">Solution</span><span class="hub">hub</span>
+    </div>
+    <span class="tagline-right">"Unmatched Service"</span>
+</div>
+
+  <div class="navbar">
+    <a href="index.html">SHOP</a>
+    <a href="service.html">SERVICE</a>
+    <a href="about.html">About us</a>
+    <a href="contactus.html">Contact us</a>
+    <a href="download.html">DOWNLOAD</a>
+</div>
+<!-- add section -->
+<div class="container2">
+  <!-- Ad Section -->
+  <div class="ad-section">
+      <div class="ad-slides" id="ad-slides">
+          <div class="ad-slide ad-slide-1"></div>
+          <div class="ad-slide ad-slide-2"></div>
+          <div class="ad-slide ad-slide-3"></div>
+      </div>
+  </div>
+
+
+<!-- <<div class="container">
+ -->
+  <!-- Animated Ad Section 
+  <div class="ad-section">
+    <div class="ad-images" id="ad-images">
+      <img src="ad1.jpg" alt="Ad 1">
+      <img src="ad2.jpg" alt="Ad 2">
+      <img src="ad3.jpg" alt="Ad 3">
+    </div>
+  </div>
+
+  <!-- Filters and Sorting Section -->
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search products..." onkeyup="filterProducts()">
+    <select id="brandFilter" onchange="filterProducts()">
+      <option value="">All Brands</option>
+      <option value="Lenovo">Lenovo</option>
+      <option value="Dell">Dell</option>
+      <option value="Asus">Asus</option>
+      <option value="acer">acer</option>
+      <option value="Vivo">Vivo</option>
+      <option value="Realme">Realme</option>
+      <option value="Redmi">Redmi</option>
+      <option value="samsung">samsung</option>
+    </select>
+    <select id="priceFilter" onchange="filterProducts()">
+      <option value="">Sort by Price</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid" id="productGrid">
+    <!--Products -->
+    <div class="product-card" data-name="Product 1" data-brand="canon" data-price="21500">
+      <img src="g2020.jpg" alt="Product 1">
+      <h3>Canon g2020</h3>
+      <h4> NRS. 21500<h4>
+       <!--  <table class="specs-table">
+          <tr class="section-title">
+            <th colspan="2">General Specifications</th>
+          </tr>
+          <tr>
+            <td>Model</td>
+            <td>canon g2020</td>
+          </tr>
+          <tr>
+            <td>Printer Type</td>
+            <td>color printer</td>
+          </tr>
+          <tr>
+            <td>Dimensions (W x D x H)</td>
+            <td>   </td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td </td>
+          </tr>
+        
+          <tr class="section-title">
+            <th colspan="2">Print Specifications</th>
+          </tr>
+          <tr>
+            <td>Print Speed</td>
+            <td>up to 9.1 ipm black / 5.0 ipm colour</td>
+          </tr>
+          <tr>
+            <td>Print Resolution</td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>Monthly Duty Cycle</td>
+            <td>Up to 80,000 pages</td>
+          </tr>
+        
+          
+            <td>Supported Paper Sizes</td>
+            <td>A4</td>
+          </tr>
+        
+          <tr class="section-title">
+            <th colspan="2">Connectivity</th>
+          </tr>
+          <tr>
+            <td>Connectivity Options</td>
+            <td>USB 2.0 </td>
+          </tr>
+          <tr>
+            <td>Mobile Printing</td>
+             <td>t</td>
+          </tr>
+          <tr>
+            <td>Network Capabilities</td>
+            <td>-</td>
+          </tr>
+
+           
+        </table> -->
+        
+  
+    </div>
+    <div class="product-card" data-name="ultra pods" data-brand="ultra" data-price="650">
+      <img src="ultra pods.jpg" alt="canon">
+      <h3>Ultrs pods</h3>
+      <p>Brand: Ultra pods</p>
+      <p>Price: 650</p>
+    </div>
+    <div class="product-card" data-name="GMktec" data-brand="GMktec" data-price="32500">
+      <img src="GMKtec g2.jpg" alt="GMktec">
+      <h3>GMktec G2 ( 12 GB DDR5  RAM + 512 SSD) </h3>
+      <p>Brand: GMKtec</p>
+      <p>Price: 32500</p>
+    </div>
+    <div class="Eardpods" data-name="airbuds" data-brand="Apple" data-price="1750">
+      <img src="airpods.jJpg"" alt="airbuds" sizes="1200">
+      <h3>airbuds pro </h3>
+      <p>Brand: apple</p>
+      <p>Price: 1750</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="450">
+      <img src="bike holder.jpg" alt="canon">
+      <h3>Bike Holder </h3>
+      <p>Easy Mountable Bike holder </p>
+      <p>Price: </p>
+    </div>
+    <div class="product-card" data-name="m6502nw" data-brand="PANTUM" data-price="36000">
+      <img src="m6502nw.jpg" alt="PANTUM">
+      <h3>PANTUM M6502 NW </h3>
+      <p>Brand: PANTUM</p>
+      <p>Price: </p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="Product 2" data-brand="BrandB" data-price="36000">
+      <img src="g3060.jpg" alt="canon">
+      <h3>Canon G 3060</h3>
+      <p>Brand: canon</p>
+      <p>Price: 36000</p>
+    </div>
+    <div class="product-card" data-name="canon" data-brand="canon" data-price="9500">
+      <img src="LiDE300-1.jpg" alt="canon">
+      <h3>Canon Lide 300-1 scanner</h3>
+      <p>Brand: Canon</p>
+      <p>Price: NRS</p>
+    </div>
+  </div>
+ 
+<script>
+ // Ad Section Slideshow
+ let currentAdIndex = 0;
+    const adSlides = document.getElementById('ad-slides');
+    const adSlideCount = adSlides.children.length;
+
+    function showNextAd() {
+        currentAdIndex = (currentAdIndex + 1) % adSlideCount;
+        adSlides.style.transform = `translateX(-${currentAdIndex * 100}%)`;
+    }
+
+    setInterval(showNextAd, 2500);
+
+
+
+
+
+  /*Animated Ad Section
+  let adIndex = 0;
+  function rotateAds() {
+    const adImages = document.getElementById('ad-images');
+    const totalAds = adImages.children.length;
+    adIndex = (adIndex + 1) % totalAds;
+    adImages.style.transform = `translateX(-${adIndex * 100}%)`;
+  }
+  setInterval(rotateAds, 3000);
+*/
+  // Filter and Search Products
+  function filterProducts() {
+    const searchInput = document.getElementById('search').value.toLowerCase();
+    const brandFilter = document.getElementById('brandFilter').value;
+    const priceFilter = document.getElementById('priceFilter').value;
+    const products = document.querySelectorAll('.product-card');
+
+    // Convert product elements to array for sorting
+    const productArray = Array.from(products);
+
+    // Filter products
+    productArray.forEach(product => {
+      const name = product.getAttribute('data-name').toLowerCase();
+      const brand = product.getAttribute('data-brand');
+      const price = parseInt(product.getAttribute('data-price'));
+
+      const matchesSearch = name.includes(searchInput);
+      const matchesBrand = !brandFilter || brand === brandFilter;
+      product.style.display = matchesSearch && matchesBrand ? 'block' : 'none';
+    });
+
+    // Sort products by price
+    if (priceFilter) {
+      productArray.sort((a, b) => {
+        const priceA = parseInt(a.getAttribute('data-price'));
+        const priceB = parseInt(b.getAttribute('data-price'));
+        return priceFilter === 'low' ? priceA - priceB : priceB - priceA;
+      });
+
+      // Append sorted products to the grid
+      const productGrid = document.getElementById('productGrid');
+      productArray.forEach(product => productGrid.appendChild(product));
+    }
+  }
+</script>
+
+</body>
+</html>
