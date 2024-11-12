@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SolutionHub</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .contact-container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transform: scale(0.9);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .contact-container h2 {
+            color: #444;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        /* Contact items styles */
+        .contact-item {
+            margin: 15px 0;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 12px 15px;
+            border-radius: 10px;
+            background-color: #f7f8fc;
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Icon styles */
+        .contact-item img {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            transition: transform 0.3s;
+        }
+        .contact-item:hover img {
+            transform: rotate(360deg);
+        }
+        
+        /* Link styles */
+        .contact-item a {
+            color: #444;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact-item a:hover {
+            color: #6e8efb;
+        }
+
+        /* Background color animations */
+        @keyframes backgroundAnimation {
+            0% { background-color: #a1c4fd; }
+            50% { background-color: #c2e9fb; }
+            100% { background-color: #a1c4fd; }
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+            .contact-container {
+                width: 100%;
+                padding: 15px;
+            }
+            .contact-container h2 {
+                font-size: 1.8em;
+            }
+            .contact-item {
+                font-size: 1em;
+                padding: 10px 12px;
+            }
+            .contact-item img {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-container h2 {
+                font-size: 1.5em;
+            }
+            .contact-item {
+                font-size: 0.9em;
+                padding: 8px 10px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-item img {
+                margin-right: 0;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <div class="contact-item">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/phone.png" alt="Phone Icon">
+        <a href="tel:+9779769726479">+977 9769726479</a>
+    </div>
+    <div class="contact-item">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/whatsapp.png" alt="WhatsApp Icon">
+        <a href="https://wa.me/9779769726479" target="_blank">WhatsApp: +977 9769726479</a>
+    </div>
+    <div class="contact-item">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png" alt="Facebook Icon">
+        <a href="https://www.facebook.com/hamrosolutionhub" target="_blank">Facebook Page</a>
+    </div>
+    <div class="contact-item">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/tiktok.png" alt="TikTok Icon">
+        <a href="https://www.tiktok.com/@yourtiktokusername" target="_blank">TikTok</a>
+    </div>
+    <div class="contact-item">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/email.png" alt="Mail Icon">
+        <a href="mailto:hamrosolutionhub@gmail.com">hamrosolutionhub@gmail.com</a>
+    </div>
+</div>
+
+</body>
+</html>
