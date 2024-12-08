@@ -1,0 +1,149 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #080000;
+  color: #fff;
+  padding: 15px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-content .highlight {
+  color: orange;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #e67e22;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  /*rid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+   grid-template-columns: repeat(5, 1fr); /* 6 products in a row */
+   
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card button {
+  padding: 8px;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #e67e22;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.modal-content .close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
