@@ -346,6 +346,23 @@ const products = [
     price: "320",
     image: "https://static-01.daraz.com.np/p/27f3b80b2ea205085c8e77431677aabc.jpg",
   },
+  {
+    id: 41,
+    name: "Acer Nitro V 15 ",
+    description: "Gamming Laptop.",
+    specs: "Processor : Intel Core i5 13420H Processor<br> RAM : 16GB DDR5 RAM <br> Graphics :NVIDIA GeForce RTX 3050 6GB GDDR6 <br>Storage :512GB SSD Storage Display :15.6-inch FHD (1920 x 1080) 144Hz IPS " ,
+    price: "रु 120000",
+    image: "nitrov15.jpg",
+  },
+
+  {
+    id: 42,
+    name: "GMktec Nuck Box G2",
+    description: "  1 year warranty  monitor mount best for office and home use small and comfortable design ",
+    specs: "CPU	: Intel Alder Lake N100 (4C/4T, 6M Cache, 0.8GHz to 3.4GHz) <br>Graphics	: Intel UHD Graphics 750MHz <br>OS	: Pre-installed Win 11 Pro (Compatible with Win10, Ubuntu, Linux) <br>RAM	:12GB*1 DDR5 4800MHz (On-Board) <br>ROM	128GB M.2 2242 SSD <br>Wireless LAN	WiFi 6(802.11ax), Bluetooth 5.2, 2*Ethernet 1000Mbps Giga LAN RJ45 <br>Video output	3 Display Output, Dual HDMI 2.0 (4K@60Hz) + Type-C DP 1.4*1 <br>lnterface	1 x DC Port; 3 x USB 3.2 Ports; 2 x HDMI Ports; 1 x DP v1.4 Port; 1 x Type-C (PD Charging); 2 x RJ45 Ethernet LAN Port 1000Mbps; 1 x Audio Jack (HP&MIC); 1 x DC IN Power Port <br>Power Adapter	19V-3.42A 57W Certification Input: 100-240V AC, 50/60Hz , Output: 19V 3.42A" ,
+    price: "3200",
+    image: "g2.jpg",
+  },
 
 ];
 
