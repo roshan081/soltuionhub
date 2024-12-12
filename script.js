@@ -363,9 +363,7 @@ const products = [
     price: "3200",
     image: "g2.jpg",
   },
-
-];
-
+  
 // Display Products
 const productList = document.getElementById("productList");
 
