@@ -346,7 +346,95 @@ const products = [
     price: "320",
     image: "https://static-01.daraz.com.np/p/27f3b80b2ea205085c8e77431677aabc.jpg",
   },
+  {
+    id: 41,
+    name: "Acer Nitro v15  Gaming Laptop",
+    description: "Acer nitro v15 best for gamming and high performance task ",
+    specs: " Processor :Ryzen 5 800 H  Processor  <br>RAM : 8 GB of DDR4 system memory upgrageble upto 32 GB  <br>Display : 15.6  display with IPS 144 HZ Refresh Rate<br>Graphics : NVIDIA GeForce RTX 3050 <br> Storage : 512 NVme ",
+    price: "NRS 110000",
+    image: "nitrov15.png",
+    
+  },
+  {
+    id: 42,
+    name: "Acer NITRO V 16 AMD Ryzen 7 ",
+    description: "Acer nitro v16 best for gamming and high performance task ",
+    specs: " Processor :AMD Ryzen 7 8845HS <br>RAM : 16 GB of DDR5   <br>Display : 16  display with IPS with 165 Hz <br>Graphics : NVIDIA GeForce RTX 4050 Graphics (6GB GDDR6) <br> Storage : 512 NVme<br>OS : Windows 11 Home  ",
+    price: "NRS 146000",
+    image: "acerv16.jpg",
+    
+  },
+  {
+    id: 43,
+    name: "Lenovo LOQ  15",
+    description: "Lenovo LOQ 3 Gaming Laptop 2024 | Intel Core i5 12450HX | 16GB RAM | 512GB SSD | RTX 3050 - 6GB | Windows 11| 15.6 inch  FHD | White Backlit Keyboard | 1 Year warranty |",
+    specs: " Processor :Intel® Core™ i5-12450HX 8C (4P + 4E) / 12T P-core up to 4.4GHz E-core up to 3.1GHz&bnsp 12MB <br>RAM :1x 16GB SO-DIMM DDR5   <br>Display : 16  display with IPS with 165 Hz <br>Graphics : NVIDIA® GeForce RTX™ 3050 6GB GDDR6 <br> Storage : 512 NVme<br>OS : Windows 11 Home  ",
+    price: "NRS 120000",
+    image: "https://laptopmedia.com/wp-content/uploads/2023/06/1-19-e1686084440715.jpg",
+  },
 
+   {
+    id: 44,
+    name: "Lenovo LOQ 3 Gaming Laptop",
+    description: "Lenovo LOQ 15 for gamming and high performance task ",
+    specs: " Processor :Intel® Core™ i5-13450HX  10C (6P + 4E) / 16T    P-core 2.4 / 4.6GHz   E-core 1.8 / 3.4GHz  20MB <br>RAM :1x 16GB SO-DIMM DDR5   <br>Display : 16  display with IPS with 165 Hz <br>Graphics : NVIDIA® GeForce RTX™ 3050 6GB GDDR6 <br> Storage : 512 NVme<br>OS : Windows 11 Home  ",
+    price: "NRS 127000",
+    image: "https://nagmani.com.np/media/catalog/product/cache/0e2619cacdf8b7664ab70c5f4c36d5fb/l/o/loq-3050.png",
+  },
+  {
+    id: 45,
+    name: "Lenovo Ideapad ",
+    description: "Lenovo IdeaPad Slim 1 Intel Core Celeron N4020 14 HD Thin and Light Laptop (8GB/256 SSD/Windows 11 Home/Office 2019/1Yr Warranty/Cloud Grey/1.3Kg) 82V6009LIN",
+    specs: " RAM: 8GB <br> Storage : 256 GB New 2024 Models <br> Display : IPS  ",
+    price: "NRS 45000",
+    image: "https://m.media-amazon.com/images/I/81L40WhmRNL.jpg",
+    
+  },
+ {
+    id: 46,
+    name: " ASUS Vivobook Go E1504",
+    description: "Its light Its compact. Its the ASUS Vivobook Go 15&nbsp and its designed to make you productive and keep you entertained wherever you go! With its 180° lay-flat hinge&nbsp&nbsp physical webcam shield and loads of thoughtful design features&nbsp&nbsp Vivobook Go 15 is the laptop that sets you free!",
+    specs: "<br>  Processro : MD Ryzen™ 3 7320U Processor 2.4GHz 6MB Cache<br> RAM :8GB DDR4 <br> OS : Windows 11 Home <br> GPU : AMD Radeon™ Graphics <br> Storage : 256GB PCIe SSD",
+    price: "NRS  65000 ",
+    image: "https://dlcdnwebimgs.asus.com/gain/78454e21-979c-441d-ab6e-0a6a9631aafe/",
+   
+  },
+  {
+    id: 47,
+    name: " ASUS Vivobook ",
+    description: "Its light Its compact. Its the ASUS Vivobook Go 15&nbsp and its designed to make you productive and keep you entertained wherever you go! With its 180° lay-flat hinge&nbsp&nbsp physical webcam shield and loads of thoughtful design features&nbsp&nbsp Vivobook Go 15 is the laptop that sets you free!",
+    specs: "<br>  Processro : AMD Ryzen™ 5 7520U Mobile Processor (4-core/8-thread   4MB cache  up to 4.3 GHz max boost)<br> RAM :8GB DDR5 <br> OS : Windows 11  <br> GPU : AMD Radeon™ Graphics <br> Storage : 512GB PCIe SSD",
+    price: "NRS  79000 ",
+    image: "https://nagmani.com.np/media/catalog/product/cache/0e2619cacdf8b7664ab70c5f4c36d5fb/e/1/e1504fa-nb.png",
+   
+  },
+  {
+    id: 48,
+    name: "GMKtec G2",
+    description: "GMKtech G2 Mini pc . Portable and best for Office and home use  .",
+    specs: "<br>  Processro : Intel® 12th Alder Lake - N100 4 Cores <br> RAM :16GB DDR4 <br> OS : Windows 11 pro <br> GPU :Intel UHD Graphics&nbsp  48EU &nbsp 750 MHz <br> Storage : 512GB PCIe SSD",
+    price: "NRS 32999",
+    image: "https://img.fantaskycdn.com/819ad3bb5307f26b339cce9ee127c023_750x.jpg",
+  },
+
+  {
+    id: 49,
+    name: "GMKtec NucBox M3",
+    description: " GMKtec Mini Desktop Computer, M3 Intel Core i5 12450H (8C/12T&nbsp up to 4.40GHz) Windows 11 Pro Mini PC 16GB DDR4 (8GB*2) 512GB SSD<br> 2X HDMI 4K 4X USB 3.2 USB-C<br> WiFi 6&nbsp BT 5.2&nbsp RJ45 2.5G",
+    specs: "<br>  Processro : Intel® Core i5-12450H 8 Cores 12 Threads <br> RAM :12GB DDR5 <br> OS : Windows 11 pro <br> GPU :Intel UHD Graphics &nbsp 750 MHz <br> Storage : 512GB PCIe SSD",
+    price: "NRS 53999 ",
+    image: "https://img.staticdj.com/9b6acd0064195b8d447d7df7381b8a20_750x.jpg",
+  
+  },
+
+  {
+    id: 50,
+    name: "Lenovo ThinkCentre",
+    description: "With the latest 12th Gen Intel® Core  processor  with vast memory and storage ThinkCentre neo 50s Gen 3 Intel is a truly responsive  powerful small form factor<br> Engineered to boost productivity its adaptable and expandable. Yet<br> its highly energy-efficient uses recycled materials and has many green credentials. Whats more with built-in device and data safeguards its also secure.",
+    specs: "<br>  Model : Lenovo ThinkCentre 50s Gen 3 <br> Processro : 12th Gen Intel® Core™ i5-12400&nbsp 6C (6P + 0E) / 12T&nbsp P-core 2.5 / 4.4GHz&nbsp 18MB <br> RAM :8GB UDIMM DDR4-3200 <br> <br> GPU :Intel UHD Graphics &nbsp  <br> Storage : 512GB PCIe SSD &nbsp Keyboard : USB Traditional Keyboard<br> Mouse <br> Monitor : 19 inch Lenovo Branded  <br> Warranty 3 years",
+    price: "रु 90000",
+    image: "https://p3-ofp.static.pub/fes/cms/2021/12/27/kpcd0801s7lut935on8coskff0giv3387665.png",
+  },
 ];
 
 // Display Products
