@@ -346,17 +346,9 @@ const products = [
     price: "320",
     image: "https://static-01.daraz.com.np/p/27f3b80b2ea205085c8e77431677aabc.jpg",
   },
-  {
-    id: 41,
-    name: "Acer Nitro V 15 ",
-    description: "Gamming Laptop.",
-    specs: "Processor : Intel Core i5 13420H Processor<br> RAM : 16GB DDR5 RAM <br> Graphics :NVIDIA GeForce RTX 3050 6GB GDDR6 <br>Storage :512GB SSD Storage Display :15.6-inch FHD (1920 x 1080) 144Hz IPS " ,
-    price: "रु 120000",
-    image: "g2.jpg",
-  },
 
+];
 
-  
 // Display Products
 const productList = document.getElementById("productList");
 
@@ -381,7 +373,7 @@ function displayProducts(filteredProducts) {
 const modal = document.getElementById("productModal");
 const productDetails = document.getElementById("productDetails");
 
-/*function viewDetails(productId) {
+function viewDetails(productId) {
   const product = products.find((p) => p.id === productId);
   productDetails.innerHTML = `
     <img src="${product.image}" alt="${product.name}">
@@ -391,20 +383,6 @@ const productDetails = document.getElementById("productDetails");
     <p><strong>Price:</strong> ${product.price}</p>
   `;
   modal.style.display = "block";
-}
-*/
-function viewDetails(productId) {
-  const product = products.find((p) => p.id === productId);
-  if (product) {
-    productDetails.innerHTML = `
-      <h2>${product.name}</h2>
-      <img src="${product.image}" alt="${product.name}">
-      <p><strong>Description:</strong> ${product.description}</p>
-      <p><strong>Specifications:</strong> ${product.specs}</p>
-      <p><strong>Price:</strong> ${product.price}</p>
-    `;
-    modal.style.display = "block";
-  }
 }
 
 function closeModal() {
