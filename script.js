@@ -381,7 +381,7 @@ function displayProducts(filteredProducts) {
 const modal = document.getElementById("productModal");
 const productDetails = document.getElementById("productDetails");
 
-function viewDetails(productId) {
+/*function viewDetails(productId) {
   const product = products.find((p) => p.id === productId);
   productDetails.innerHTML = `
     <img src="${product.image}" alt="${product.name}">
@@ -391,6 +391,20 @@ function viewDetails(productId) {
     <p><strong>Price:</strong> ${product.price}</p>
   `;
   modal.style.display = "block";
+}
+*/
+function viewDetails(productId) {
+  const product = products.find((p) => p.id === productId);
+  if (product) {
+    productDetails.innerHTML = `
+      <h2>${product.name}</h2>
+      <img src="${product.image}" alt="${product.name}">
+      <p><strong>Description:</strong> ${product.description}</p>
+      <p><strong>Specifications:</strong> ${product.specs}</p>
+      <p><strong>Price:</strong> ${product.price}</p>
+    `;
+    modal.style.display = "block";
+  }
 }
 
 function closeModal() {
