@@ -435,6 +435,359 @@ const products = [
     price: "रु 90000",
     image: "https://p3-ofp.static.pub/fes/cms/2021/12/27/kpcd0801s7lut935on8coskff0giv3387665.png",
   },
+  {
+    id: 51,
+    name: "PlusPro Easy Refil Cardridge 325",
+    description: "Easy Refil Cartride User for canon LBP 325",
+    specs: " PlusPRO Branded cardridge",
+    price: "रु 1800",
+    image: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/471283806_122116339928419974_2547161394790372089_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y6VGOE7VReAQ7kNvgH3R8ha&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=AdUW6unqoImggiVj5qMVVCM&oh=00_AYDu4ezKzYAwFry23EcB7y7R68owwU89gxNhWU39o1ECbA&oe=678A9BBB",
+  },
+  {
+    id: 52,
+    name: "PlusPro Easy Refil 303",
+    description: "PlusPro Easy Refil Cardridge Use for Canon LBP 2900/2900b printers",
+    specs: "",
+    price: "रु 1650",
+    image: "https://static-01.daraz.com.np/p/d03c36732d7629ab6575fd6f09f20138.jpg",
+  },
+  {
+    id: 53,
+    name: "Pluspro Cartridge 2355/2375/2540",
+    description: "Product Name: Pluspro Cartridge 2355/2375/2540<br>Model No: 2355/2375/2540<br>Plus Point: Easy To Refil<br>Page Yield: 5% coverage 2600pages<br>",
+    specs: "Use for <br>  Brother HL-L2300D/2321D/2340DW/2360DN/2361DN/2365DW/2366DW/DCP-L2500D/2520DW/2540DN/MFC-L2700DW/2701D/2701DW",
+    price: "रु 1750",
+    image: "https://cdn.blanxer.com/uploads/63f214530ac4ec1916469204/product_image-t-2355-4830.png",
+  },
+  {
+    id: 54,
+    name: "Pluspro Cartridge 1000/1030/1510",
+    description: "Use for <br> Brother - HL1112/1110/DCP1510/1512/MFC1810/1510",
+    specs: "",
+    price: "रु 1400",
+    image: "https://cdn.blanxer.com/uploads/63f214530ac4ec1916469204/product_image-t-1030-6500.png",
+  },
+
+  {
+    id: 55,
+    name: "Pluspro Cartridge PC-210EK",
+    description: "PANTUM PRINTER <br>USe for <br>P2200/2207/P2500/P2SOS/P2S07/P2S0CWT 2500NW",
+    specs: "",
+    price: "रु 3500",
+    image: "https://cdn.blanxer.com/uploads/63f214530ac4ec1916469204/product_image-pc-210-ek-9860.png",
+  },
+  {
+    id: 56,
+    name: "Cartridge TL-412k",
+    description: "For Use In<br> PANTUM P3012DW/P3012DN/P3302DW/P3302DN/P3302SN/M6802DW/<br>M6802DN/M7102DW/M7102DN/M7202DW/M7202DN/M6802FDW/<br>M7202FDW/M7302FDW/P3012D/M7202FDN/M7202FDW/M7302FDN/ <br>M7302FDW",
+    specs: "Page Yield: 5% coverage 3000pages<br>Page Yield: 5% coverage 3000pages <br>Printing quality test to ensure the printing is real, sharp, no slur and won't fade<br>",
+    price: "रु 3800",
+    image: "https://cdn.blanxer.com/uploads/63f214530ac4ec1916469204/product_image-tl-412-k_2-0479.png",
+  },
+  {
+    id: 57,
+    name: "Drum Unit TL-412k",
+    description: "For Use In<br> PANTUM P3012DW/P3012DN/P3302DW/P3302DN/P3302SN/M6802DW/<br>M6802DN/M7102DW/M7102DN/M7202DW/M7202DN/M6802FDW/<br>M7202FDW/M7302FDW/P3012D/M7202FDN/M7202FDW/M7302FDN/ <br>M7302FDW",
+    price: "रु 3800",
+    image: "https://cdn.blanxer.com/uploads/63f214530ac4ec1916469204/product_image-tl-412-k_2-0479.png",
+  },
+
+  {
+    id: 58,
+    name: "Drum Unit ",
+    description: "Drum Unit for Brother Printer 2540/254",
+    specs: "use for Brother 2540 printer",
+    price: "रु 2500",
+    image: "https://www.precisionroller.com/img/E3193.wh.jpg",
+  },
+  {
+    id: 59,
+    name: "Pluspro C-P303 / P703 / P103 Toner Powder",
+    description: "Plus pro Toner 90 g <br> use for canon LBP 2900/2900B and many more",
+    specs: "",
+    price: "रु 250",
+    image: "https://itgroup.com.np/wp-content/uploads/2021/05/tonerbottle1.jpg",
+  },
+  {
+    id: 60,
+    name: "Tonner for canon /Hp printer",
+    description: "weight : 80 gm<br",
+    specs: "Use for <br> canon Ax/1100/1010/2100/4000<br>500/8150/canon LBP 2900/1210/3900",
+    price: "रु 240",
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/10/350146404/MF/VI/GV/3585597/itbl-ihp052-toner-powder-500x500.jpeg",
+  },
+  {
+    id: 61,
+    name: "Universal Toner Refill for Brother Printer -50 g ",
+    description: "",
+    specs: "",
+    price: "रु 225",
+    image: "https://img.drz.lazcdn.com/g/kf/Sed40fdd52bfd4c67b1b944ed7b89cf0aJ.jpg_720x720q80.jpg",
+  },
+  {
+    id: 62,
+    name: "Refil ink 003 set",
+    description: "Refil ink set 003",
+    specs: "use for <br>Epson EcoTank L1110, L3100, L3110, L3150, L3115, L3116, L3101, L3210, L3215, L3216, L3250, L3151, L3152, L3156, L5190, L4150",
+    price: "रु 1400",
+    image: "https://m.media-amazon.com/images/I/61ku2SQsi8L._AC_SX679_.jpg",
+  },
+  {
+    id: 63,
+    name: "003 BK ink",
+    description: ".",
+    specs: "use for <br>Epson EcoTank L1110, L3100, L3110, L3150, L3115, L3116, L3101, L3210, L3215, L3216, L3250, L3151, L3152, L3156, L5190, L4150",
+    price: "रु 450",
+    image: "https://qualitycomputer.com.np/web/image/product.template/49204/image_1024?unique=05f99b6",
+  },
+  {
+    id: 64,
+    name: "664 Refil Ink",
+    description: "664 ink set",
+    specs: "use for epson L100 L110 L120 L130 L132 L200 L210 L220 L222 L300 L310 L312 L350 L355 L360 L361 L362 L365 L366 L375 L380 L382 L385 L386 L395 L455 L456 L475 L485 L486 L495 L550 L555 L565 L566 L575 L1300 ET-2500 ET-2550 ET-2600 ET-2650 ET-4500 ET-14000 L396 L3050 L3060 L3070",
+    price: "रु 1400",
+    image: "https://5.imimg.com/data5/SELLER/Default/2024/1/374917761/ZY/KJ/WT/3585109/epson-664-ink.jpeg",
+  },
+  {
+    id: 65,
+    name: "664 BK ink Refil ",
+    description: ".",
+    specs: "for EPSON<br> L100 L110 L120 L130 L132 L200 L210 L220 L222 L300 L310 L312 L350 L355 L360 L361 L362 L365 L366 L375 L380 L382 L385 L386 L395 L455 L456 L475 L485 L486 L495 L550 L555 L565 L566 L575 L1300 ET-2500 ET-2550 ET-2600 ET-2650 ET-4500 ET-14000 L396 L3050 L3060 L3070",
+    price: "रु 450",
+    image:"https://ae01.alicdn.com/kf/S7f381a77f3c94730846fbc38740084bfb.jpg",
+
+  },
+  {
+    id: 66,
+    name: "Canon Compatible Refill Ink Full Set ( BK, C, M, Y) For PIXMA G-series Inkjet Printer, 135 ml Black Ink & 70ML Color",
+    description: "Compatible Canon PIXMA G1000,G1010,G1100,G2000,G2002,G2010,G2012,G2100,G3000,G3010,G3012,G3100,G4000,G4010,G2020,G3020,G2010,G3010,G67",
+    specs: "",
+    price: "रु 1500",
+    image: "https://static-01.daraz.com.np/p/3dcefc60cdd31f1b7e69cd0bea9aa22a.jpg",
+  },
+  {
+    id: 67,
+    name: "Canon GI-790 Ink Bottle (BLACK) Canon GI-790 Ink Bottle (BLACK)",
+    description: "canon orginal ink ",
+    specs: "GI-790",
+    price: "रु 1300",
+    image: "https://img.drz.lazcdn.com/static/np/p/6907c8d592bb78e14edd870176f2a8ca.jpg_720x720q80.jpg",
+  },
+  {
+    id: 68,
+    name: "Canon PIXMA GI790 ",
+    description: "Use for Canon PIXMA GI790 Black Ink Bottle for G1010, G2000, G2012, G3000, G3010, G3012, G4010",
+    specs: "",
+    price: "रु 4800",
+    image: "https://www.diyhotspot.com/images/medium/CanonGI790InkBottleRefill_MED.webp",
+  },
+  {
+    id: 69,
+    name: "GI 71 Ink ",
+    description: "Canon orginal ink",
+    specs: "",
+    price: "रु 1450",
+    image: "https://static-01.daraz.com.np/p/2706b1de5912b8a5259d08f8f91b4832.jpg",
+  },
+  {
+    id: 70,
+    name: "GI 71 Refil ink BK",
+    description: ".",
+    specs: "",
+    price: "रु 480",
+    image: "https://cdn11.bigcommerce.com/s-9c8cf/images/stencil/1280x1280/products/3061/3758/compatible-gi-71-pigment-black-ink-bottle-for-canon-printer-1__64204.1711008715.jpg?c=2",
+  },
+  {
+    id: 71,
+    name: "Pantum Original Toner Cartridge PB-212 Genuine Toner P2502W Plus M6502NW Plus Printer, PB-212 Yields up to 1,600 Pages",
+    description: "Uses for printers: Pantum laser printer P2502W Plus/M6502NW Plus",
+    specs: "",
+    price: "रु 4000",
+    image: "https://images-cdn.ubuy.co.in/633ad58d79ba316c835a9155-211.jpg",
+  },
+
+  {
+    id: 72,
+    name: "pantum Comfortable Cartdrige ",
+    description: "",
+    specs: "",
+    price: "रु 1820",
+    image: "https://m.media-amazon.com/images/I/71WwE+YA5oL._AC_SL1500_.jpg",
+  },
+  {
+    id: 73,
+    name: "Internet Cable 5 mtr",
+    description: "Internet cable 5 mtr ",
+    specs: "",
+    price: "रु 200",
+    image: "https://img.drz.lazcdn.com/static/np/p/1338bf66dff921fe851d281209dd86fd.jpg_720x720q80.jpg_.webp",
+  },
+  {
+    id: 74,
+    name: "Internet Cable 10 mtr",
+    description: "Internet cable 10 mtr ",
+    specs: "",
+    price: "रु 350",
+    image: "https://img.drz.lazcdn.com/static/np/p/1338bf66dff921fe851d281209dd86fd.jpg_720x720q80.jpg_.webp",
+  },
+  {
+    id: 74,
+    name: "Internet Cable 15 mtr",
+    description: "Internet cable 15 mtr ",
+    specs: "",
+    price: "रु 500",
+    image: "https://img.drz.lazcdn.com/static/np/p/1338bf66dff921fe851d281209dd86fd.jpg_720x720q80.jpg_.webp",
+
+  },
+  {
+    id: 74,
+    name: "Internet Cable 20 mtr",
+    description: "Internet cable 20 mtr ",
+    specs: "",
+    price: "रु 650",
+    image: "https://img.drz.lazcdn.com/static/np/p/1338bf66dff921fe851d281209dd86fd.jpg_720x720q80.jpg_.webp",
+
+  },
+  {
+    id: 77,
+    id: 74,
+    name: "Internet Cable 3 mtr",
+    description: "Internet cable 3 mtr ",
+    specs: "",
+    price: "रु 140",
+    image: "https://img.drz.lazcdn.com/static/np/p/1338bf66dff921fe851d281209dd86fd.jpg_720x720q80.jpg_.webp",
+
+  },
+  {
+    id: 79,
+    name: "Scanner Cable",
+    description: "Scanner Cable 2.0 1.5 mtr",
+    specs: "",
+    price: "रु 90000",
+    image: "https://bearcatwarehouse.com/cdn/shop/products/USBScannerCableForCurrentModelsCloseUP_2048x2048.png?v=1644592185",
+  },
+  {
+    id: 80,
+    name: "Electric Rod  ",
+    description: "2000-3000 watt ",
+    specs: "",
+    price: "रु 350",
+    image: "https://img.drz.lazcdn.com/static/np/p/45c6fe4cd547bb1ee30d34a9f9c0331d.jpg_720x720q80.jpg",
+  },
+  {
+    id: 81,
+    name: "Electric jug ",
+    description: "",
+    specs: "capacity : 1.8 Ltr<br>power : 1500 w <br> ",
+    price: "रु  1000 ",
+    image: "https://static-01.daraz.com.np/p/93bfb76a495de6e3f542870bae6d15bb.jpg",
+  },
+  
+  {
+    id: 82,
+    name: "Heater ",
+    description: "A -ONE Heater",
+    specs: "Model :- A-1153 <br> Power :- adjustable with 3 modes 800 w /1000 /1200w  ",
+    price: "रु   ",
+    image: "https://www.cgdigital.com.np/api/images/products/L5ScIC_1672994121-CGHH12C05.png",
+  },
+  {
+    id: 83,
+    name: "SMPS 450 watt ",
+    description: "use for computer and CCTV camera ",
+    specs: "",
+    price: "रु 1500  ",
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/1/GW/UW/YY/11492368/zebronics-smps-450w-zeb-n450w.jpeg",
+  },
+  {
+    id: 84,
+    name: "SMPS 550 watt ",
+    description: "use for Gamming Desktop and also with normal Desktop ",
+    specs: "",
+    price: "रु 3500  ",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiKT4cvQAxOpSmf5Elh5IxdwBzYDxRVLCRR9YhHSIZUnZ95QQrLKa5r4-gmd8VX8-lvE&usqp=CAU",
+  },
+  {
+    id: 85,
+    name: "SandDisk SDD 128 GB ",
+    description: " High Speed Orginal Sandisk SSd ",
+    specs: "",
+    price: "रु 2900  ",
+    image: "https://static-01.daraz.com.np/p/22fbb4c4d6e0112441915c99a0555d56.jpg",
+  },
+  {
+    id: 86,
+    name: "SandDisk SDD 256 GB ",
+    description: " High Speed Orginal Sandisk SSd ",
+    specs: "",
+    price: "रु 4000  ",
+    image: "https://static-01.daraz.com.np/p/22fbb4c4d6e0112441915c99a0555d56.jpg",
+  }, 
+  {
+    id: 87,
+    name: "SandDisk SDD 512 GB ",
+    description: " High Speed Orginal Sandisk SSd ",
+    specs: "",
+    price: "रु 6000  ",
+    image: "https://static-01.daraz.com.np/p/22fbb4c4d6e0112441915c99a0555d56.jpg",
+  },
+  {
+    id: 88,
+    name: "Nvme 128 GB SSD",
+    description: " High Speed SSD ",
+    specs: "",
+    price: "रु 3000  ",
+    image: "https://img.drz.lazcdn.com/static/np/p/aaaf32c3cd99c150616228ab8fc861de.jpg_720x720q80.jpg",
+  },
+
+  {
+    id: 89,
+    name: "Nvme 256 GB SSD",
+    description: " High Speed SSD ",
+    specs: "",
+    price: "रु 4000  ",
+    image: "https://img.drz.lazcdn.com/static/np/p/aaaf32c3cd99c150616228ab8fc861de.jpg_720x720q80.jpg",
+  },
+
+  {
+    id: 90,
+    name: "Nvme 512 GB SSD",
+    description: " High Speed SSD ",
+    specs: "",
+    price: "रु 8000 ",
+    image: "https://ae01.alicdn.com/kf/Hefbc988cf6c94c2398cee21529b07854p.jpg",
+  },
+
+  {
+    id: 90,
+    name: "Laxer 128 GB SSD ",
+    description: " High Speed SSD Transand SSD  ",
+    specs: "",
+    price: "रु 3000 ",
+    image: "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/04/10/b9469932-c7aa-91c1-7b67-9d5bfe6cafcd.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 // Display Products
