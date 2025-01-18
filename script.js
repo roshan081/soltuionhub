@@ -761,12 +761,20 @@ const products = [
   {
     id: 90,
     name: "Laxer 128 GB SSD ",
-    description: " High Speed SSD Transand SSD  ",
+    description: " High Speed SSD Laser SSD  ",
     specs: "",
     price: "रु 3000 ",
     image: "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/04/10/b9469932-c7aa-91c1-7b67-9d5bfe6cafcd.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
   },
 
+  {
+    id: 91,
+    name: "TRANSCEND - TS500TESD265C - 500GB ",
+    description: "  500GB External SSD, ESD270C - USB 3.1 Gen 2, Type-C + TYPE A CABLE ",
+    specs: "USB 3.1 Gen 2 interface with the support of UASP (USB Attached SCSI Protocol) <br> Up to 520 MB/s read; 460 MB/s write<br> 3D NAND flash memory <br>Credit-card size fits perfectly in a wallet <br>Includes a USB Type-C cable and a USB Type-C to Type-A cable",
+    price: "रु 3000 ",
+    image: "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/04/10/b9469932-c7aa-91c1-7b67-9d5bfe6cafcd.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
+  },
 
 
 
